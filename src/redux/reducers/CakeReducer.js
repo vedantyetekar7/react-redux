@@ -1,7 +1,4 @@
-import {
-  ADD_CAKE_TO_CART,
-  REMOVE_CAKE_FROM_CART,
-} from "../actions/action-types";
+import { CAKE_ACTIONS_TYPES } from "../actions/action-types";
 
 const initialState = {
   numOfCakes: 10,
@@ -9,13 +6,13 @@ const initialState = {
 
 export const CakeReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_CAKE_TO_CART:
+    case CAKE_ACTIONS_TYPES.ADD_CAKE_TO_CART:
       return {
         ...state,
         numOfCakes: state.numOfCakes + action.payload,
       };
 
-    case REMOVE_CAKE_FROM_CART:
+    case CAKE_ACTIONS_TYPES.REMOVE_CAKE_FROM_CART:
       return {
         ...state,
         numOfCakes:

@@ -1,15 +1,15 @@
-import { ADD_CAKE_TO_CART, REMOVE_CAKE_FROM_CART } from "./action-types";
+import { CAKE_ACTIONS_TYPES } from "./action-types";
 
 export const AddCakeToCart = (cakeCnt) => {
   return {
-    type: ADD_CAKE_TO_CART,
+    type: CAKE_ACTIONS_TYPES.ADD_CAKE_TO_CART,
     payload: cakeCnt,
   };
 };
 
 export const RemoveCakeFromCart = (cakeCnt) => {
   return {
-    type: REMOVE_CAKE_FROM_CART,
+    type: CAKE_ACTIONS_TYPES.REMOVE_CAKE_FROM_CART,
     payload: cakeCnt,
   };
 };
