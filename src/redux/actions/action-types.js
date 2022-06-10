@@ -1,0 +1,2 @@
+export const ADD_CAKE_TO_CART = "ADD_CAKE_TO_CART";
+export const REMOVE_CAKE_FROM_CART = "REMOVE_CAKE_FROM_CART";
